@@ -26,6 +26,9 @@
 #        include <sys/ioctl.h>
 #        include <sys/syscall.h>
 #        include <unistd.h>
+#        if defined(B0)
+#            undef B0
+#        endif
 #    endif
 #    include <sys/mman.h>
 #endif
